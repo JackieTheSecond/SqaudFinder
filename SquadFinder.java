@@ -6,14 +6,18 @@ public class SquadFinder {
 
     public static void main(String args[]){
         ArrayList<Location> userLocations = new ArrayList<Location>();
+        //Test Locations for Running
+       /* Location one = new Location(40.427002,-86.928026);
+        Location two = new Location(40.426619, -86.918429);
+        userLocations.add(one);
+        userLocations.add(two); */
+
         Location center = findAverage(userLocations);
+        System.out.println(center);
 
     }
-    
-    public int calc(){
 
-        return 3;
-    }
+
 
     public static Location findAverage(ArrayList<Location> arrayList){
 

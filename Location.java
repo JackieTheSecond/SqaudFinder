@@ -49,6 +49,15 @@ public class Location {
         return name;
     }
 
+    public String toString(){
+        if(name == null){
+            return latitude + "," + longitude;
+        }
+       return name + ":" + latitude + "," + longitude;
+
+
+    }
+
 
 }
 
